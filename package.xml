@@ -5,8 +5,8 @@
 				http://pear.php.net/dtd/tasks-1.0.xsd
 				http://pear.php.net/dtd/package-2.0
 				http://pear.php.net/dtd/package-2.0.xsd">
-	<name></name>
-	<channel>pear.ryanmccue.info</channel>
+	<name>Requests</name>
+	<channel>element-34.github.com/pear</channel>
 	<summary>A HTTP library written in PHP, for human beings.</summary>
 	<description>
 			A HTTP library written in PHP, for human beings.
@@ -17,22 +17,165 @@
 		<email>me plus pear at ryanmccue dot info</email>
 		<active>yes</active>
 	</lead>
-	<date>2012-02-08</date>
+	<date>2012-06-11</date>
 	<time>14:35:00</time>
 	<version>
-		<release>1.6.0-dev</release>
-		<api>1.6.0-dev</api>
+		<release>1.7.0</release>
+		<api>1.7.0</api>
 	</version>
 	<stability>
-		<release>devel</release>
-		<api>devel</api>
+		<release>stable</release>
+		<api>stable</api>
 	</stability>
 	<license uri="https://github.com/rmccue/Requests/blob/master/LICENSE" filesource="LICENSE">ISC</license>
 	<notes>-</notes>
 	<contents>
-			<dir name="/">
-				<!-- This needs to be updated on release -->
+		<dir name="/">
+            <dir name="Requests">
+				<dir name="Auth">
+					<file baseinstalldir="/" name="Basic.php" role="php">
+						<tasks:replace from="@package_version@" to="version" type="package-info" />
+					</file>
+				</dir>
+				<file baseinstalldir="/" name="Auth.php" role="php">
+					<tasks:replace from="@package_version@" to="version" type="package-info" />
+				</file>
+				<dir name="Exception">
+					<dir name="HTTP">
+						<file baseinstalldir="/" name="400.php" role="php">
+							<tasks:replace from="@package_version@" to="version" type="package-info" />
+						</file>
+						<file baseinstalldir="/" name="401.php" role="php">
+							<tasks:replace from="@package_version@" to="version" type="package-info" />
+						</file>
+						<file baseinstalldir="/" name="402.php" role="php">
+							<tasks:replace from="@package_version@" to="version" type="package-info" />
+						</file>
+						<file baseinstalldir="/" name="403.php" role="php">
+							<tasks:replace from="@package_version@" to="version" type="package-info" />
+						</file>
+						<file baseinstalldir="/" name="404.php" role="php">
+							<tasks:replace from="@package_version@" to="version" type="package-info" />
+						</file>
+						<file baseinstalldir="/" name="405.php" role="php">
+							<tasks:replace from="@package_version@" to="version" type="package-info" />
+						</file>
+						<file baseinstalldir="/" name="406.php" role="php">
+							<tasks:replace from="@package_version@" to="version" type="package-info" />
+						</file>
+						<file baseinstalldir="/" name="407.php" role="php">
+							<tasks:replace from="@package_version@" to="version" type="package-info" />
+						</file>
+						<file baseinstalldir="/" name="408.php" role="php">
+							<tasks:replace from="@package_version@" to="version" type="package-info" />
+						</file>
+						<file baseinstalldir="/" name="409.php" role="php">
+							<tasks:replace from="@package_version@" to="version" type="package-info" />
+						</file>
+						<file baseinstalldir="/" name="410.php" role="php">
+							<tasks:replace from="@package_version@" to="version" type="package-info" />
+						</file>
+						<file baseinstalldir="/" name="411.php" role="php">
+							<tasks:replace from="@package_version@" to="version" type="package-info" />
+						</file>
+						<file baseinstalldir="/" name="412.php" role="php">
+							<tasks:replace from="@package_version@" to="version" type="package-info" />
+						</file>
+						<file baseinstalldir="/" name="413.php" role="php">
+							<tasks:replace from="@package_version@" to="version" type="package-info" />
+						</file>
+						<file baseinstalldir="/" name="414.php" role="php">
+							<tasks:replace from="@package_version@" to="version" type="package-info" />
+						</file>
+						<file baseinstalldir="/" name="415.php" role="php">
+							<tasks:replace from="@package_version@" to="version" type="package-info" />
+						</file>
+						<file baseinstalldir="/" name="416.php" role="php">
+							<tasks:replace from="@package_version@" to="version" type="package-info" />
+						</file>
+						<file baseinstalldir="/" name="417.php" role="php">
+							<tasks:replace from="@package_version@" to="version" type="package-info" />
+						</file>
+						<file baseinstalldir="/" name="418.php" role="php">
+							<tasks:replace from="@package_version@" to="version" type="package-info" />
+						</file>
+						<file baseinstalldir="/" name="428.php" role="php">
+							<tasks:replace from="@package_version@" to="version" type="package-info" />
+						</file>
+						<file baseinstalldir="/" name="429.php" role="php">
+							<tasks:replace from="@package_version@" to="version" type="package-info" />
+						</file>
+						<file baseinstalldir="/" name="431.php" role="php">
+							<tasks:replace from="@package_version@" to="version" type="package-info" />
+						</file>
+						<file baseinstalldir="/" name="500.php" role="php">
+							<tasks:replace from="@package_version@" to="version" type="package-info" />
+						</file>
+						<file baseinstalldir="/" name="501.php" role="php">
+							<tasks:replace from="@package_version@" to="version" type="package-info" />
+						</file>
+						<file baseinstalldir="/" name="502.php" role="php">
+							<tasks:replace from="@package_version@" to="version" type="package-info" />
+						</file>
+						<file baseinstalldir="/" name="503.php" role="php">
+							<tasks:replace from="@package_version@" to="version" type="package-info" />
+						</file>
+						<file baseinstalldir="/" name="504.php" role="php">
+							<tasks:replace from="@package_version@" to="version" type="package-info" />
+						</file>
+						<file baseinstalldir="/" name="505.php" role="php">
+							<tasks:replace from="@package_version@" to="version" type="package-info" />
+						</file>
+						<file baseinstalldir="/" name="411.php" role="php">
+							<tasks:replace from="@package_version@" to="version" type="package-info" />
+						</file>
+						<file baseinstalldir="/" name="Unknown.php" role="php">
+							<tasks:replace from="@package_version@" to="version" type="package-info" />
+						</file>
+					</dir>
+					<file baseinstalldir="/" name="HTTP.php" role="php">
+						<tasks:replace from="@package_version@" to="version" type="package-info" />
+					</file>
+				</dir>
+				<file baseinstalldir="/" name="Exception.php" role="php">
+					<tasks:replace from="@package_version@" to="version" type="package-info" />
+				</file>
+				<file baseinstalldir="/" name="Hooks.php" role="php">
+					<tasks:replace from="@package_version@" to="version" type="package-info" />
+				</file>
+				<file baseinstalldir="/" name="IDNAEncoder.php" role="php">
+					<tasks:replace from="@package_version@" to="version" type="package-info" />
+				</file>
+				<file baseinstalldir="/" name="IPv6.php" role="php">
+					<tasks:replace from="@package_version@" to="version" type="package-info" />
+				</file>
+				<file baseinstalldir="/" name="IRI.php" role="php">
+					<tasks:replace from="@package_version@" to="version" type="package-info" />
+				</file>
+				<dir name="Response">
+					<file baseinstalldir="/" name="Headers.php" role="php">
+						<tasks:replace from="@package_version@" to="version" type="package-info" />
+					</file>
+				</dir>
+				<file baseinstalldir="/" name="Response.php" role="php">
+					<tasks:replace from="@package_version@" to="version" type="package-info" />
+				</file>
+				<dir name="Transport">
+					<file baseinstalldir="/" name="cURL.php" role="php">
+						<tasks:replace from="@package_version@" to="version" type="package-info" />
+					</file>
+					<file baseinstalldir="/" name="fsockopen.php" role="php">
+						<tasks:replace from="@package_version@" to="version" type="package-info" />
+					</file>
+				</dir>
+				<file baseinstalldir="/" name="Transport.php" role="php">
+					<tasks:replace from="@package_version@" to="version" type="package-info" />
+				</file>
 			</dir>
+			<file baseinstalldir="/" name="Requests.php" role="php">
+				<tasks:replace from="@package_version@" to="version" type="package-info" />
+			</file>
+		</dir>
 	</contents>
 	<dependencies>
 		<required>
