@@ -1,6 +1,6 @@
 <?php
 
-include(dirname(dirname(__FILE__)) . '/library/Requests.php');
+include(dirname(dirname(__FILE__)) . '/Requests.php');
 Requests::register_autoloader();
 
 function autoload_tests($class) {
