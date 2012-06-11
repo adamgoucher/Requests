@@ -1,3 +1,11 @@
+Note from Adam
+--------------
+
+Requests in complete awesomesauce. But the structure of the project does not
+lend itself to PEAR packaging. If you are not using PEAR for your project, you
+want [Ryan's repo](https://github.com/rmccue/Requests) not mine.
+
+
 Requests for PHP
 ================
 
@@ -51,53 +59,11 @@ Features
 Installation
 ------------
 
-### Install with Composer
-If you're using [Composer](https://github.com/composer/composer) to manage
-dependencies, you can add Requests with it.
+### Install with PEAR
+If you're using [PEAR](http://pear.php.net) to manage packages, you can add Requests with it.
 
-    {
-        "require": {
-            "rmccue/requests": ">=1.0"
-        },
-        "autoload": {
-            "psr-0": {"Requests": "library/"}
-        }
-    }
-
-### Install source from GitHub
-To install the source code:
-
-    $ git clone git://github.com/rmccue/Requests.git
-
-And include it in your scripts:
-
-    require_once '/path/to/Requests/library/Requests.php';
-
-You'll probably also want to register an autoloader:
-
-    Requests::register_autoloader();
-
-
-### Install source from zip/tarball
-Alternatively, you can fetch a [tarball][] or [zipball][]:
-
-    $ curl https://github.com/rmccue/Requests/tarball/master | tar xzv
-    (or)
-    $ wget https://github.com/rmccue/Requests/tarball/master -O - | tar xzv
-
-[tarball]: https://github.com/rmccue/Requests/tarball/master
-[zipball]: https://github.com/rmccue/Requests/zipball/master
-
-
-### Using a Class Loader
-If you're using a class loader (e.g., [Symfony Class Loader][]) for
-[PSR-0][]-style class loading:
-
-    $loader->registerNamespace('Requests', 'path/to/vendor/Requests/library');
-
-[Symfony Class Loader]: https://github.com/symfony/ClassLoader
-[PSR-0]: https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md
-
+    $ sudo pear channel-discover element-34.github.com/pear
+    $ sudo pear install -f element-34/Requests
 
 Documentation
 -------------
